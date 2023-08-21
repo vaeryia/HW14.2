@@ -174,16 +174,25 @@
                                         <rect key="frame" x="0.0" y="85.333333333333371" width="343" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC with XIB and send Data"/>
+                                        <connections>
+                                            <action selector="goToThird:" destination="nqM-zn-rn8" eventType="touchUpInside" id="FYD-qk-fZ9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOe-zs-JtF">
                                         <rect key="frame" x="0.0" y="170.66666666666669" width="343" height="54.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separated Storyboard and send Data"/>
+                                        <connections>
+                                            <action selector="goToFourthWithoutSegue" destination="nqM-zn-rn8" eventType="touchUpInside" id="li3-mk-A57"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8D-Mu-lG9">
                                         <rect key="frame" x="0.0" y="276.00000000000006" width="343" height="54.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separated Storyboard with Segue and send Data"/>
+                                        <connections>
+                                            <segue destination="ilg-FL-7QQ" kind="show" identifier="goToFourthVC" id="ucz-5A-PAf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -256,7 +265,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D37-Mr-reR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="902"/>
+            <point key="canvasLocation" x="1679" y="856"/>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="aHg-YI-a94">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="ilg-FL-7QQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zyU-UC-8B6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAL-zQ-dY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="1323"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VDf-UL-frN">
